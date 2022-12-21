@@ -68,7 +68,7 @@ func Result(doneTasks chan Ttype, undoneTasks chan error) {
 	}()
 
 	for u := range undoneTasks {
-		fmt.Println("\nErrors:")
+		fmt.Println("\nErrors!")
 		fmt.Println(u)
 	}
 }
