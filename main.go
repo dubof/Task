@@ -19,7 +19,7 @@ type resultStruct struct {
 func taskCreturer(superChan chan Ttype, a Ttype) {
 	for {
 		ct := time.Now().Format(time.RFC3339)
-		if time.Now().Nanosecond()%2 > 0 { // вот такое условие появления ошибочных тасков
+		if time.Now().Nanosecond()%2 > 0 { // вот такое условие появления ошибочных тасков.
 			ct = "Some error occured"
 		}
 
